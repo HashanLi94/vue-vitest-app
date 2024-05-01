@@ -14,3 +14,23 @@ describe("getUserByUsername", () => {
 		});
 	});
 });
+
+describe("checkCoolness", () => {
+	test("fetch user and check coolness", async () => {
+		const userOne = await getUserByUsername("hashandu94");
+
+		expect(userOne.coolness).toEqual(-1);
+	});
+});
+
+describe("check the invalid user", () => {
+	// test.fails("fetch user and check the user is valid or not", async () => {
+	// 	const invalidUser = await getUserByUsername("hashandu948");
+	// });
+
+	test("fetch user and check the user is valid or not", async () => {
+		expect(
+			async () => await getUserByUsername("hashandu948")
+		).rejects.toThrowError("User not found");
+	});
+});
