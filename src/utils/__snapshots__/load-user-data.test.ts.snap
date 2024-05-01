@@ -3,6 +3,7 @@
 exports[`getUserByUsername > fetch user 1`] = `
 {
   "coolness": -1,
+  "favoriteFood": "Biriyani",
   "id": 3,
   "name": "Hashan Liyanage",
   "projects": [

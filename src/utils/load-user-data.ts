@@ -4,6 +4,7 @@ interface User {
 	name: string;
 	projects: string[];
 	coolness?: number;
+	favoriteFood: string;
 }
 
 async function fetchUser(username: string): Promise<User | undefined> {
@@ -13,18 +14,21 @@ async function fetchUser(username: string): Promise<User | undefined> {
 			username: "evanYou",
 			name: "Evan You",
 			projects: ["vue.js", "nuxt", "vite"],
+            favoriteFood: "Sushi"
 		},
 		{
 			id: 2,
 			username: "anthonyFu07",
 			name: "Anthony Fu",
 			projects: ["vitest", "vite"],
+            favoriteFood: "Sushi"
 		},
 		{
 			id: 3,
 			username: "hashandu94",
 			name: "Hashan Liyanage",
 			projects: ["CCF", "SLA", "PP3"],
+            favoriteFood: "Biriyani"
 		},
 	];
 
