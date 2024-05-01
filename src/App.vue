@@ -1,10 +1,10 @@
 <script setup lang="ts">
 	import { onMounted } from "vue";
-	import loadUserData  from "../src/utils/load-user-data";
+	import { getUserByUsername } from "../src/utils/load-user-data";
 	import HelloWorld from "./components/HelloWorld.vue";
 
 	onMounted(async () => {
-		const user = await loadUserData("Hashan94");
+		const user = await getUserByUsername("Hashan94");
 
 		console.log(user);
 	});
