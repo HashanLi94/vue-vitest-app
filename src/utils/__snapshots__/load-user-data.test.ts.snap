@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`getUserByUsername > fetch user 1`] = `
+{
+  "coolness": -1,
+  "id": 3,
+  "name": "Hashan Liyanage",
+  "projects": [
+    "CCF",
+    "SLA",
+    "PP3",
+  ],
+  "username": "hashandu94",
+}
+`;

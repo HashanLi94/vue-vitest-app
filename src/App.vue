@@ -4,7 +4,7 @@
 	import HelloWorld from "./components/HelloWorld.vue";
 
 	onMounted(async () => {
-		const user = await getUserByUsername("Hashan94");
+		const user = await getUserByUsername("hashandu94");
 
 		console.log(user);
 	});
